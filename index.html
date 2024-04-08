@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Task Board</title>
+  <title>Kanban Task Board</title>
 </head>
 
 <body>
@@ -25,6 +25,33 @@
       <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
     </div>
     <!-- Todo: Create a modal with a form to add tasks -->
+    <div class = "modal fade" id = "formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+      <div class = "modal-dialog">
+        <div class="modal-content">
+          <div class = "modal-header">
+            <h4 class = "modal-title" id = "formModalLabel">Create New Task</h4>
+            <button type = "button" class = "btn-close" data-bs-dismiss = "modal" aria-label="Close"></button>
+          </div>
+          <div class = "modal-body">
+            <form id = "taskForm">
+              <div class = "mb-3">
+                <label for = "taskTitle" class = "form-label">Title</label>
+                <input type = "text" class = "form-control" id = "taskTitle">
+              </div>
+              <div class = "mb-3">
+                <label for = "taskDescription" class = "form-label">Description</label>
+                <textarea class = "form-control" id = "taskDescription" required></textarea>
+              </div>
+              <div class = "mb-3">
+                <label for = "taskDuedate" class = "form-label">Due Date</label>
+                <input class = "form-control" id = "taskDuedate">
+              </div>
+              <button type="submit" class = "btn btn-primary">Create Task</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row swim-lanes text-center justify-content-between">
       <div class="col-12 col-lg-4 d-flex">
         <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
