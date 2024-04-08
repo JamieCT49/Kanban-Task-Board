@@ -1,7 +1,10 @@
 # Third-Party-Taskboard![alt text](image.png)
 Week 5 boot camp challenge.
 Left it way too late.
-
+Live Page.
+https://jamiect49.github.io/Kanban-Task-Board/
+Git Hub.
+https://github.com/JamieCT49/Kanban-Task-Board
 
 User Story
 AS A project team member with multiple tasks to organize
